@@ -1,0 +1,46 @@
+.label-body {
+  color: #ff5722;
+  font-size: 18px;
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+}
+
+.mh-custom-posts-item {
+  padding: 12px 0;
+  border-bottom: 1px dotted #ebebeb;
+}
+
+.mh-custom-posts-item:first-child {
+  padding-top: 0;
+}
+
+.mh-custom-posts-thumb {
+  float: left;
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+}
+
+.mh-custom-posts-small-title {
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.mh-custom-posts-small-title > a:hover {
+  color: #ff5722;
+}
+
+.mh-custom-posts-header {
+  overflow: hidden;
+}
+
+.mh-meta a {
+  color: #979797;
+  font-size: 12px;
+}
+
+.mh-meta a:hover {
+  color: #FF5722;
+}
+

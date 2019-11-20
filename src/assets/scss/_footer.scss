@@ -1,0 +1,82 @@
+.footer {
+  color: #dbe3e8 !important;
+  width: 100%;
+  align-self: flex-end;
+}
+
+.footer-header {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  color: #dbe3e8 !important;
+  font-size: 1.2rem !important;
+
+}
+
+.bg-dark {
+  background-color: #252525 !important;
+}
+
+.footer-social-links-external-link {
+  display: inline-block;
+  height: 1.5rem;
+}
+
+.footer-social-links > .footer-social-links-external-link {
+  width: 1.5rem;
+  margin-right: .5rem;
+}
+.footer-social-links .fa {
+  font-size: 1.3rem;
+}
+
+.footer-social-links .link img {
+  margin-bottom: 5px;
+}
+
+.footer-social-links .link-icon {
+  width: 1.4rem;
+}
+
+.footer-divider {
+  border-color: hsla(0,0%,100%,.2)!important
+}
+
+.mobile-app-badges {
+  margin: -8px 0 0 -8px;
+}
+
+.play-store-badge {
+  width: 150px;
+}
+
+.app-store-badge {
+  width: 130px;
+  margin: 10px;
+}
+
+.footer .resources {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .resources li {
+  margin: 0 0 12px;
+  flex-basis: 50%;
+}
+
+.footer-links-external-link .link-icon, .footer-social-links li {
+  width: 1.5rem;
+  margin-right: .5rem;
+}
+
+.footer-links-external-link .link {
+  display: flex;
+  align-items: center;
+}
+
+//.footer .service-badges {
+//  display: flex;
+//  flex-direction: column;
+//}
+

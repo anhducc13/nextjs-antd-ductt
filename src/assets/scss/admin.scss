@@ -1,0 +1,105 @@
+.workspace {
+  height: calc(100vh - 60px);
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.brand {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  white-space: nowrap;
+  color: rgb(0, 123, 255);
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.ant-layout-header {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 11;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 2px 2px, rgba(0, 0, 0, 0.02) 0px 1px 0px;
+  padding: 0px 1rem;
+  line-height: 60px;
+  background: #fff;
+  flex: 0 0 auto;
+}
+
+.trigger {
+  transform: rotate(90deg);
+  margin-right: 1rem;
+  color: #007BFF;
+}
+
+.ant-menu {
+  font-family: inherit;
+  line-height: inherit;
+  box-shadow: none;
+  margin-bottom: 1px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+}
+
+.menu-divider {
+  position: relative;
+}
+
+.menu-divider::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  content: "";
+  background-color: rgb(249, 249, 249);
+}
+
+.ant-menu-submenu {
+  top: 2px;
+}
+
+.ant-menu-submenu-title {
+  padding: 0px 1rem;
+}
+
+.ant-layout-sider-children {
+  background: #fff;
+  overflow: hidden;
+  flex: 1 1 auto;
+  flex-direction: column;
+  display: flex;
+}
+
+.scroll-y {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@media (max-width: 991px) {
+  #hidden-md-down {
+    display: none;
+  }
+}
+

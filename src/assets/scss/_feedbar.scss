@@ -1,0 +1,78 @@
+.feed-bar {
+  height: 1.6em;
+  overflow-y: hidden;
+}
+
+@media (min-width: 768px) {
+  .feed-bar {
+    min-height: 35px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.feed-bar ul.feed-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feed-bar .feed-links {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  overflow-x: auto;
+  min-height: calc(1.6rem + 11px);
+  padding-bottom: 0;
+  margin-bottom: 0;
+  overflow-y: hidden;
+  margin-top: 0!important;
+  max-height: 35px;
+}
+
+.feed-bar .feedbar-item .feed-link:after {
+  left: 0;
+  width: 0;
+  height: 2px;
+  content: "";
+  bottom: -8px;
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  transition: width .3s ease;
+}
+
+.feed-bar .feedbar-item .feed-link:hover:after {
+  width: 100%;
+}
+
+.feed-bar .feed-links .feedbar-item {
+  padding: 0;
+  position: relative;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+  top: -5px;
+}
+
+.feed-bar .feed-links .feedbar-item .feed-link {
+  color: #fff;
+  font-size: .9em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.feed-bar .feed-links .feedbar-item .feed-link:hover {
+  color: #FF5722;
+}
+
+.feed-bar .feedbar-item.active>.feed-link:after {
+  width: 100%;
+  height: 2px;
+  content: "";
+  display: block;
+  margin-top: 5px;
+  background-color: #fff;
+}
+
