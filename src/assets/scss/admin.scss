@@ -103,3 +103,12 @@ label {
   }
 }
 
+.left-sider {
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+  overflow: hidden;
+  flex: 1 1 auto;
+}
+
