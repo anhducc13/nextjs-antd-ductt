@@ -107,8 +107,24 @@ label {
   flex-direction: column;
   display: flex;
   height: 100vh;
-  max-height: -webkit-fill-available;
   overflow: hidden;
   flex: 1 1 auto;
 }
 
+.ant-drawer-body {
+  padding: 0;
+}
+
+.ant-menu-inline .ant-menu-item, .ant-menu-inline .ant-menu-submenu-title {
+  width: 100%;
+}
+
+.ant-menu-submenu-title {
+  text-transform: UPPERCASE;
+  font-weight: 600;
+}
+
+.ant-menu-item-group-title {
+  text-transform: UPPERCASE;
+  font-weight: 700;
+}
