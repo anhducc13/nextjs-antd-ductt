@@ -5,6 +5,12 @@ import Link from 'next/link';
 
 const nav = [
   {
+    title: 'Trang chủ',
+    url: '/admin',
+    key: '/admin',
+    icon: 'fa fa-home',
+  },
+  {
     title: 'Quản lý đề thi',
     key: '1',
     url: null,
@@ -64,7 +70,7 @@ export default () => {
       >
         {
           nav.map(n => {
-            return (
+            return n.children && n.children.length > 0 ? (
               <Menu.ItemGroup key={n.key} title={n.title}>
                 {
                   n.children.map(c => {
@@ -77,6 +83,11 @@ export default () => {
                   })
                 }
               </Menu.ItemGroup>
+            ) : (
+              <Menu.Item key={n.key} onClick={() => route.push(n.url)}>
+                <i className={`${n.icon} mr-3`} aria-hidden="true"/>
+                {n.title}
+              </Menu.Item>
             );
           })
         }
@@ -104,8 +115,7 @@ export default () => {
               <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"/>
             </Badge>
           </Dropdown>
-          <span className="mr-auto"></span>
-
+          <span className="mr-auto" />
           <a className="px-3 text-body" href="https://facebook.com/ductt.97">
             <Tooltip title="About">
               <Icon type="question-circle" style={{ fontSize: 20 }}/>
