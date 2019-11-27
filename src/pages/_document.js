@@ -2,6 +2,7 @@ import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
+
   render() {
     return (
       <html>
@@ -15,7 +16,8 @@ export default class MyDocument extends Document {
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
               integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
               crossOrigin="anonymous"/>
-
+        {/*<script type="text/javascript"*/}
+        {/*src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML"/>*/}
       </Head>
       <body>
       <Main/>

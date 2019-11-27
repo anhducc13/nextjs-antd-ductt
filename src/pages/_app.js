@@ -5,7 +5,9 @@ import 'assets/scss/index.scss';
 import NextNProgress from 'components/NextNProgress';
 import 'configs';
 
+
 class MyApp extends App {
+
   render() {
     const { Component, pageProps } = this.props;
     return (
